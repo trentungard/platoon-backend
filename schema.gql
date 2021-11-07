@@ -1,0 +1,11 @@
+type User {
+    firstName: String!,
+    lastName: String!,
+    userName: String!,
+    uid: String!,
+    undercover: String!
+}
+
+type Photo {
+    key: String!
+}
