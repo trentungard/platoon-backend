@@ -1,0 +1,29 @@
+type User {
+    firstName: String!,
+    lastName: String!,
+    userName: String!,
+    uid: String!,
+    undercover: String!,
+    setupComplete: Boolean!
+}
+
+type Query {
+    user: User
+}
+
+type Mutation {
+    addUser(
+        firstName: String,
+        lastName: String,
+        userName: String,
+        uid: String,
+        undercover: String,
+        setupComplete: Boolean
+    ): User
+}
+
+type Mutation {
+    removeUser(
+        uid: String
+    ): User
+}
